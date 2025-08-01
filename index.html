@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Tari Tradisional</title>
+    <link rel="icon" type="image/x-icon" href="../include/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <!-- header -->
+    <div id="header-placeholder"></div>
+
+       <!-- carousel -->
+        <div>
+         <div id="selection-placeholder"></div>
+        </div>
+    <div>
+        <div class="foto">
+            <img src="../include/fotoBeranda2.jpg" alt="" class="fotos">
+        </div>
+        
+        <div class="card3wrap">
+            <div class="card3">
+                <h1 class="judul">Budaya Indonesia</h1>
+                <div class="pabrik"><img src="assets/beranda.jpg" class="pabrik2"></div>
+                
+                <p class="penjelasan">Triumph Motorcycle adalah produsen sepeda motor asal Inggris yang berdiri sejak tahun 1902 dan kini bermarkas di Hinckley, Leicestershire, Inggris. Merek ini dikenal luas karena menggabungkan gaya klasik khas Inggris dengan teknologi modern. Triumph menawarkan berbagai model, mulai dari motor retro seperti Bonneville, motor petualangan seperti Tiger, hingga motor performa tinggi seperti Speed Triple.<br><br><br>
+                Triumph punya reputasi kuat dalam dunia balap dan budaya motor, serta sering tampil dalam film, seperti yang dikendarai oleh Steve McQueen. Dengan sejarah panjang dan desain elegan, Triumph menjadi simbol motor bergaya, bertenaga, dan berkelas.</p>
+            </div>
+        </div>
+
+        <h1 class="judul2">Temukan Jiwamu</h1>
+
+ 
+
+        <!-- button -->
+        <div id="floating-placeholder"></div>
+
+    </div>
+
+
+    <div>
+        <div id="footer-placeholder"></div>
+    </div>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .judul {
+            text-align: center;
+            padding-top: 80px;
+            padding-bottom: 25px;
+        }
+
+        .judul2 {
+            text-align: center;
+            padding-top: 160px;
+            padding-bottom: 25px;
+        }
+        
+        .penjelasan {
+            padding-top: 50px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 25px;
+        }
+
+        .foto {
+            padding-top: 25px;
+            /* padding-right: 50px; */
+            /* display: flex; */
+            /* overflow-y: scroll; */
+        }
+
+        .fotos {
+            width: 100%;
+        }
+
+        .pabrik {
+            text-align: center;
+        }
+
+        .pabrik2 {
+            width: 500px;
+            padding: 25px;
+        }
+
+        .card3 {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 800px;
+        }
+
+        .card3:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        
+        .cardPic3 {
+            width: 800px;
+        }
+
+        .card3wrap {
+            justify-items: center;
+            padding: 50px;
+        }
+        
+
+
+        @media (max-width: 600px) {
+            .fotos {
+                width: 100%;
+                padding-top: 10%;
+            }
+
+            .penjelasan {
+                padding-top: 5%;
+            }
+
+            .pabrik2 {
+                width: 90%;
+            }
+
+            .card3 {
+                width: 99%;
+            }
+        }
+    </style>
+
+<script>
+   fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })    ;
+
+    fetch('selection.html')
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById('selection-placeholder').innerHTML = data;
+      });
+
+    fetch('floatingButton.html')
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById('floating-placeholder').innerHTML = data;
+      });
+
+    fetch('footer.html')
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+</script>
+</body>
+</html>

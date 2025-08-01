@@ -1,0 +1,49 @@
+    <nav class="navbar">
+        <div class="logo"><a href="https://www.smkn10surabaya.sch.id/pages/beranda.php" title="web resmi smekten"><img src="assets/logo.png" width="40px" class="logos"></a></div>
+        <ul class="links">
+            <li><a href="beranda.php" class="menu">Home</a></li>
+            <li><a href="tentang.php" class="menu">About</a></li>
+            <!-- <li><a href="produk.php">Product</a></li> -->
+            <li><a href="kontak.php" class="menu">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+        }
+       
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: green;
+            padding: 12px;
+            width: 100%;
+            position: fixed;       
+            box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);   
+            z-index: 999;  
+        }
+
+        .links {
+            display: flex;
+            gap: 55px;
+            list-style: none;
+        }
+
+        .menu{
+            text-decoration: none;
+            color: white;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .menu:hover {
+            color: yellow;
+        }
+    </style>
