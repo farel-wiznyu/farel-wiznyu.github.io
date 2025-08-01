@@ -34,7 +34,12 @@
         <div class="card3wrap" id="main">
             <div class="card3">
                 <h1 class="judul">Tari Saman di Asian Games 2018: <br>  Simbol Persatuan dalam Keindahan Gerak</h1>
-                <div class="pabrik"><iframe width="560" height="315" src="https://www.youtube.com/embed/B_AXmqqPER0?si=omH6dTEoNJMqGMea" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
+                <div class="pabrik">
+                    <div class="iframe">
+                         <iframe  src="https://www.youtube.com/embed/B_AXmqqPER0?si=omH6dTEoNJMqGMea" title="YouTube video player" frameborder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                         </iframe> 
+                    </div>
+                </div>
                 
                 <p class="penjelasan">Pada pembukaan Asian Games 2018 di Jakarta–Palembang, dunia disuguhkan penampilan megah dari Tari Saman, salah satu warisan budaya Indonesia yang berasal dari Aceh. Ditampilkan secara kolosal oleh lebih dari 1.600 penari, Tari Saman berhasil mencuri perhatian internasional berkat kekompakan gerak, kecepatan ritme, dan kekuatan visual yang menggambarkan semangat kebersamaan. Tarian ini dipilih karena mencerminkan nilai-nilai universal seperti kerja sama, persatuan, dan disiplin—yang sejalan dengan semangat Asian Games sebagai ajang olahraga dan persahabatan antarbangsa.<br><br><br>
                 Lebih dari sekadar pertunjukan seni, penampilan Tari Saman di ajang internasional ini menjadi simbol kuat dari identitas budaya Indonesia yang dinamis dan membanggakan. Gerakan serempak tanpa iringan alat musik, hanya dengan suara vokal dan tepukan tubuh, menciptakan suasana magis yang menekankan pentingnya harmoni dalam keberagaman. Momen ini tak hanya menunjukkan kekayaan budaya Nusantara kepada dunia, tetapi juga menumbuhkan rasa bangga dan cinta terhadap budaya sendiri, khususnya di kalangan generasi muda.
@@ -42,10 +47,10 @@
     </p>
             </div>
         </div>
-
+<!-- 
         <h1 class="judul2">Temukan Jiwamu</h1>
 
- 
+  -->
 
         <!-- button -->
         <div id="floating-placeholder"></div>
@@ -58,6 +63,10 @@
     </div>
 
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial;
         }
@@ -102,6 +111,21 @@
             padding: 25px;
         }
 
+        .iframe {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+        }
+
+        .iframe iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0; 
+}
         .card3 {
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             transition: 0.3s;
@@ -117,7 +141,8 @@
         }
 
         .card3wrap {
-            justify-items: center;
+            display: flex;  
+            justify-content: center;
             padding: 50px;
         }
         
@@ -137,8 +162,12 @@
                 width: 90%;
             }
 
+            .card3wrap {
+                padding: 20px;
+            }
+
             .card3 {
-                width: 99%;
+                width: 100%;
             }
         }
     </style>
