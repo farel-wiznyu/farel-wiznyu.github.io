@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Tari Tradisional</title>
     <link rel="icon" type="image/x-icon" href="../include/logo.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -22,13 +22,24 @@
             <img src="../include/fotoBeranda2.jpg" alt="" class="fotos">
         </div>
         
-        <div class="card3wrap">
+        <div class="card3wrap" id="main">
             <div class="card3">
-                <h1 class="judul">Budaya Indonesia</h1>
-                <div class="pabrik"><img src="assets/beranda.jpg" class="pabrik2"></div>
+                <h1 class="judul">Budaya Indonesia <br>  Warisan Bangsa yang Kaya dan Beragam</h1>
+                <div class="pabrik"><img src="../assets/beranda.jpg" class="pabrik2"></div>
                 
-                <p class="penjelasan">Triumph Motorcycle adalah produsen sepeda motor asal Inggris yang berdiri sejak tahun 1902 dan kini bermarkas di Hinckley, Leicestershire, Inggris. Merek ini dikenal luas karena menggabungkan gaya klasik khas Inggris dengan teknologi modern. Triumph menawarkan berbagai model, mulai dari motor retro seperti Bonneville, motor petualangan seperti Tiger, hingga motor performa tinggi seperti Speed Triple.<br><br><br>
-                Triumph punya reputasi kuat dalam dunia balap dan budaya motor, serta sering tampil dalam film, seperti yang dikendarai oleh Steve McQueen. Dengan sejarah panjang dan desain elegan, Triumph menjadi simbol motor bergaya, bertenaga, dan berkelas.</p>
+                <p class="penjelasan">Budaya Indonesia merupakan warisan tak ternilai yang terbentuk dari keberagaman suku, agama, ras, dan adat istiadat yang tersebar di seluruh penjuru Nusantara. Dengan lebih dari 17.000 pulau, 1.300 lebih suku bangsa, dan ratusan bahasa daerah, Indonesia dikenal sebagai salah satu negara dengan kekayaan budaya terbesar di dunia.<br><br><br>
+                Budaya Indonesia tidak hanya tercermin dalam bentuk tari-tarian tradisional, musik daerah, pakaian adat, rumah tradisional, hingga upacara adat, tetapi juga dalam nilai-nilai kehidupan masyarakat yang menjunjung tinggi gotong royong, toleransi, dan kebersamaan.</p>
+            </div>
+        </div>
+        <div class="card3wrap" id="main">
+            <div class="card3">
+                <h1 class="judul">Tari Saman di Asian Games 2018: <br>  Simbol Persatuan dalam Keindahan Gerak</h1>
+                <div class="pabrik"><iframe width="560" height="315" src="https://www.youtube.com/embed/B_AXmqqPER0?si=omH6dTEoNJMqGMea" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
+                
+                <p class="penjelasan">Pada pembukaan Asian Games 2018 di Jakarta–Palembang, dunia disuguhkan penampilan megah dari Tari Saman, salah satu warisan budaya Indonesia yang berasal dari Aceh. Ditampilkan secara kolosal oleh lebih dari 1.600 penari, Tari Saman berhasil mencuri perhatian internasional berkat kekompakan gerak, kecepatan ritme, dan kekuatan visual yang menggambarkan semangat kebersamaan. Tarian ini dipilih karena mencerminkan nilai-nilai universal seperti kerja sama, persatuan, dan disiplin—yang sejalan dengan semangat Asian Games sebagai ajang olahraga dan persahabatan antarbangsa.<br><br><br>
+                Lebih dari sekadar pertunjukan seni, penampilan Tari Saman di ajang internasional ini menjadi simbol kuat dari identitas budaya Indonesia yang dinamis dan membanggakan. Gerakan serempak tanpa iringan alat musik, hanya dengan suara vokal dan tepukan tubuh, menciptakan suasana magis yang menekankan pentingnya harmoni dalam keberagaman. Momen ini tak hanya menunjukkan kekayaan budaya Nusantara kepada dunia, tetapi juga menumbuhkan rasa bangga dan cinta terhadap budaya sendiri, khususnya di kalangan generasi muda.
+
+    </p>
             </div>
         </div>
 
@@ -68,6 +79,7 @@
             padding-left: 25px;
             padding-right: 25px;
             padding-bottom: 25px;
+            text-align: justify;
         }
 
         .foto {
@@ -132,25 +144,25 @@
     </style>
 
 <script>
-   fetch('header.html')
+   fetch('../includes/header.html')
         .then(response => response.text())
         .then(data => {
         document.getElementById('header-placeholder').innerHTML = data;
       })    ;
 
-    fetch('selection.html')
+    fetch('../includes/selection.html')
         .then(res => res.text())
         .then(data => {
         document.getElementById('selection-placeholder').innerHTML = data;
       });
 
-    fetch('floatingButton.html')
+    fetch('../includes/floatingButton.html')
         .then(res => res.text())
         .then(data => {
         document.getElementById('floating-placeholder').innerHTML = data;
       });
 
-    fetch('footer.html')
+    fetch('../includes/footer.html')
         .then(res => res.text())
         .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
