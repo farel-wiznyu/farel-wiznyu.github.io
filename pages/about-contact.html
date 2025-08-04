@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Tari Tradisional</title>
+    <link rel="icon" type="image/x-icon" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    
+    <!-- header -->
+    <div id="header-placeholder"></div>
+
+	<div class="spacer"></div>
+
+	<div class="container">	
+		<div class="about section">
+			<h1>Tentang Kami</h1>
+			<p>
+			Website ini dirancang kami untuk memperkenalkan kekayaan budaya tari tradisional Indonesia dengan cara yang simpel, modern, dan interaktif. 
+    		Kami ingin anak muda bisa kenal lebih dekat sama warisan budaya lewat artikel, visual menarik, dan pengalaman browsing yang nyaman.</p>
+		</div>
+		<div class="contact section">
+			 <h1>Hubungi Kami</h1>
+			<form>
+				<input type="text" placeholder="Nama kamu" required>
+				<input type="email" placeholder="Email aktif" required>
+				<textarea rows="5" placeholder="Pesan kamu..." required></textarea>
+				<button type="submit">Kirim</button>
+			</form>
+		</div>
+	</div>
+
+<!-- 
+        <h1 class="judul2">Temukan Jiwamu</h1>
+
+  -->
+
+        <!-- button -->
+        <div id="floating-placeholder"></div>
+
+    </div>
+
+
+    <div>
+        <div id="footer-placeholder"></div>
+    </div>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 100px 20px 50px;
+    }
+
+    .section {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .spacer {
+        height: 140px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+        color: #006666;
+    }
+
+    .about p {
+        line-height: 1.6;
+        font-size: larger;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    input, textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 1rem;
+    }
+
+    button {
+        background-color: teal;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+
+    button:hover {
+        background-color: #007777;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+            padding: 80px 15px 40px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .about p {
+            font-size: 1rem;
+            text-align: justify;
+        }
+    }
+
+    @media (max-width: 480px) {
+        input, textarea, button {
+            font-size: 0.9rem;
+        }
+
+        .about, .contact {
+            padding: 0;
+        }
+
+        .container {
+            padding-top: 80px;
+        }
+    }
+</style>
+
+
+<script>
+   fetch('../includes/header.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })    ;
+
+    fetch('../includes/selection.html')
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById('selection-placeholder').innerHTML = data;
+      });
+
+    fetch('../includes/floatingButton.html')
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById('floating-placeholder').innerHTML = data;
+      });
+
+    fetch('../includes/footer.html')
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+</script>
+</body>
+</html>

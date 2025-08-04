@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Tari Tradisional</title>
+    <link rel="icon" type="image/x-icon" href="../assets/logo.png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    
+    <!-- header -->
+    <div id="header-placeholder"></div>
+
+    <div>
+        <div class="foto">
+            <img src="../include/fotoBeranda2.jpg" alt="" class="fotos">
+        </div>
+        
+        <div class="card3wrap" id="main">
+            <div class="card3">
+                <div class="titles">
+					<h1 class="judul">Mengenal Tari Piring dari Sumatera Barat</h1>
+					<h4>TARI KESER BOJONG - Jaipongan Official Video</h4>
+				</div>
+                 <div class="pabrik">
+                    <div class="iframe">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pQNyro8qmP0?si=TZopwIEIA3sZS-HX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+                <p class="penjelasan">Tari Piring adalah tarian tradisional dari Minangkabau, Sumatera Barat, yang terkenal karena penarinya membawa piring di telapak tangan sambil menari lincah tanpa menjatuhkannya—epik banget! Gerakannya cepat, energik, dan penuh koordinasi, biasanya diiringi musik tradisional seperti talempong dan saluang. Dulu, Tari Piring punya makna sakral, dipakai dalam ritual ucapan syukur setelah panen sebagai persembahan untuk para dewa. Tapi seiring waktu, fungsinya bergeser jadi pertunjukan seni yang menghibur, tanpa kehilangan nilai simboliknya.<br><br><br>Yang bikin Tari Piring makin menarik adalah tantangan teknisnya—penari harus bisa mengayunkan piring dengan ritme tertentu, kadang bahkan sampai menari di atas pecahan kaca sebagai bagian dari atraksi. Ini bukan cuma soal kemampuan fisik, tapi juga soal keindahan seni dan keberanian. Sekarang, Tari Piring sering tampil di panggung nasional hingga internasional sebagai representasi budaya Minang yang penuh semangat dan elegan. Buat generasi muda, Tari Piring ngajarin kalau keseimbangan, kerja keras, dan kekompakan itu bisa diwujudkan lewat tarian. Budaya lokal tuh nggak pernah kalah keren, bro—asal kita mau kenal lebih dekat.
+				</p>
+            </div>
+        </div>
+<!-- 
+        <h1 class="judul2">Temukan Jiwamu</h1>
+
+  -->
+
+        <!-- button -->
+        <div id="floating-placeholder"></div>
+
+    </div>
+
+
+    <div>
+        <div id="footer-placeholder"></div>
+    </div>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial;
+        }
+
+        .titles {
+            text-align: center;
+            padding-top: 80px;
+            padding-bottom: 25px;
+        }
+
+        .judul2 {
+            text-align: center;
+            padding-top: 160px;
+            padding-bottom: 25px;
+        }
+        
+        .penjelasan {
+            padding-top: 50px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 25px;
+            text-align: justify;
+        }
+
+        .foto {
+            padding-top: 25px;
+            /* padding-right: 50px; */
+            /* display: flex; */
+            /* overflow-y: scroll; */
+        }
+
+        .fotos {
+            width: 100%;
+        }
+
+        .pabrik {
+            text-align: center;
+        }
+
+        .pabrik2 {
+            width: 500px;
+            padding: 25px;
+        }
+
+        .iframe {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+        }
+
+        .iframe iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0; 
+}
+        .card3 {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 800px;
+        }
+
+        .card3:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        
+        .cardPic3 {
+            width: 800px;
+        }
+
+        .card3wrap {
+            display: flex;  
+            justify-content: center;
+            padding: 50px;
+        }
+        
+
+
+        @media (max-width: 600px) {
+            .fotos {
+                width: 100%;
+                padding-top: 10%;
+            }
+
+            .penjelasan {
+                padding-top: 5%;
+            }
+
+            .pabrik2 {
+                width: 90%;
+            }
+
+            .card3wrap {
+                padding: 20px;
+            }
+
+            .card3 {
+                width: 100%;
+            }
+        }
+    </style>
+
+<script>
+   fetch('../includes/header.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })    ;
+
+    fetch('../includes/selection.html')
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById('selection-placeholder').innerHTML = data;
+      });
+
+    fetch('../includes/floatingButton.html')
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById('floating-placeholder').innerHTML = data;
+      });
+
+    fetch('../includes/footer.html')
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+</script>
+</body>
+</html>
